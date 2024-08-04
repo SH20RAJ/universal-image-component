@@ -1,0 +1,28 @@
+{
+    "name": "universal-img-component",
+    "version": "1.0.0",
+    "description": "🌟 A versatile React component for handling images with ease! 📸 Supports multiple modes: convert images to Base64 🔄, optimize with CDN 🌐, create text-based images 📝, and use Next.js optimization 🚀. Perfect for any project needing dynamic image management!",    "main": "index.js",
+    "types": "index.d.ts",
+    "scripts": {
+      "test": "echo \"No tests specified\" && exit 0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/SH20RAJ/universal-image-component.git"
+    },
+    "keywords": [
+      "react",
+      "image",
+      "base64",
+      "cdn",
+      "nextjs",
+      "text-image"
+    ],
+    "author": "SH20RAJ",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/SH20RAJ/universal-image-component/issues"
+    },
+    "homepage": "https://github.com/SH20RAJ/universal-image-component#readme"
+  }
+  
