@@ -13,6 +13,7 @@
 ## Features ✨
 
 - **Normal Mode**: Display images using standard URLs.
+- **Cloudinary Mode** (Recommended): Use Cloudinary for image transformations and optimizations.
 - **Base64 Mode**: Convert images to Base64 format.
 - **CDN Mode**: Optimize images using a CDN service.
 - **Text Mode**: Create text-based images with Statically’s Open Graph service.
@@ -113,14 +114,29 @@ Uses Next.js `Image` component for optimized handling:
 <Img src="https://via.placeholder.com/150" alt="placeholder" mode="next" width={150} height={150} />
 ```
 
+### Cloudinary Mode ☁️
+
+Uses Cloudinary for image transformations and optimizations:
+
+```jsx
+<Img
+  src="https://res.cloudinary.com/demo/image/upload/sample.jpg"
+  mode="cloudinary"
+  width="300"
+  height="300"
+  format="webp"
+  fit="cover"
+/>
+```
+
 ## Props 🛠️
 
 - `src` (string): The source URL or text for the image.
-- `mode` (string): Mode to use. Options: `"normal"`, `"base64"`, `"cdn"`, `"text"`, `"textbase"`, `"next"`. Default is `"normal"`.
+- `mode` (string): Mode to use. Options: `"normal"`, `"base64"`, `"cdn"`, `"text"`, `"textbase"`, `"next"`, `"cloudinary"`. Default is `"normal"`.
 - `width` (string|number): Width of the image. Applies to all modes.
 - `height` (string|number): Height of the image. Applies to all modes.
-- `format` (string): Format of the image in CDN mode (e.g., `"webp"`, `"jpg"`, `"png"`).
-- `fit` (string): Fit mode in CDN mode (e.g., `"cover"`, `"contain"`, `"fill"`, `"inside"`, `"outside"`).
+- `format` (string): Format of the image in CDN and Cloudinary modes (e.g., `"webp"`, `"jpg"`, `"png"`).
+- `fit` (string): Fit mode in CDN and Cloudinary modes (e.g., `"cover"`, `"contain"`, `"fill"`, `"inside"`, `"outside"`).
 - `text` (string): Text for text modes (`"text"` and `"textbase"`).
 - `theme` (string): Theme for text-based images (e.g., `"dark"`). Applies to text modes.
 - `fontsize` (string): Font size for text-based images (e.g., `"24px"`). Applies to text modes.
@@ -132,4 +148,3 @@ This package is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact 📫
 
 For any questions or feedback, feel free to open an issue or join the discussion on [GitHub Issues](https://github.com/SH20RAJ/universal-image-component/issues) and [GitHub Discussions](https://github.com/SH20RAJ/universal-image-component/discussions). You can also reach out via email at [sh20raj@gmail.com](mailto:sh20raj@gmail.com).
-
