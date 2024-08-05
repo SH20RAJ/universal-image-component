@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-type ImgMode = 'normal' | 'base64' | 'cdn' | 'text' | 'textbase' | 'next';
+type ImgMode = 'normal' | 'base64' | 'cdn' | 'text' | 'textbase' | 'next' | 'cloudinary';
 
 interface ImgProps {
   src: string;
